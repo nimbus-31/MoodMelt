@@ -36,7 +36,7 @@ moodmelt/
 ├── models/
 ├── routes/
 ├── server.js
-└── .env (ignored)
+└── .env
 ---
 
 ## Running the Project Locally
