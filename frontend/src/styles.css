@@ -1,0 +1,160 @@
+/* RESET */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* LIGHT MODE */
+.app {
+  padding: 40px;
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #c8f9d6, #93edb5);
+  color: #0b3b2e;
+  transition: 0.4s;
+}
+
+/* DARK MODE */
+.app.dark {
+  background: linear-gradient(to bottom right, #1e3a8a, #3b82f6);
+  color: white;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 900;
+  text-shadow: 0 4px 14px rgba(0,0,0,0.25);
+}
+
+.mode-btn {
+  position: absolute;
+  right: 40px;
+  top: 10px;
+  padding: 10px 18px;
+  border-radius: 12px;
+  border: none;
+  background: rgba(255,255,255,0.4);
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+}
+
+/* FORM */
+.form {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.emoji-selected {
+  font-size: 40px;
+  padding: 10px;
+  border-radius: 15px;
+  background: rgba(255,255,255,0.45);
+  backdrop-filter: blur(12px);
+}
+
+.input {
+  width: 55%;
+  padding: 18px;
+  border-radius: 18px;
+  border: none;
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(10px);
+  font-size: 20px;
+  color: #0b3b2e;
+  font-weight: 500;
+  outline: none;
+}
+
+.app.dark .input {
+  background: rgba(255,255,255,0.25);
+  color: white;
+}
+
+.input::placeholder {
+  color: rgba(0,0,0,0.45);
+}
+
+.app.dark .input::placeholder {
+  color: rgba(255,255,255,0.5);
+}
+
+.add-btn {
+  padding: 15px 25px;
+  border-radius: 18px;
+  background: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* EMOJI PICKER */
+.picker {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.picker-emoji {
+  font-size: 28px;
+  background: rgba(255,255,255,0.45);
+  border: none;
+  padding: 10px 14px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.picker-emoji.active {
+  outline: 3px solid white;
+}
+
+/* CARDS */
+.mood-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  position: relative;
+  padding: 25px;
+  border-radius: 25px;
+  background: rgba(255,255,255,0.25);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.card-emoji {
+  font-size: 56px;
+}
+
+.card-text {
+  margin-top: 10px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* DELETE BUTTON */
+.delete-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  border: none;
+  background: rgba(255,255,255,0.4);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}

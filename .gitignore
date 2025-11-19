@@ -1,0 +1,11 @@
+# Ignore env files anywhere
+.env
+*/.env
+
+# Ignore node modules in any folder
+node_modules/
+backend/node_modules/
+frontend/node_modules/
+
+# Optional: ignore logs
+*.log
